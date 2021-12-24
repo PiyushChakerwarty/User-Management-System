@@ -35,5 +35,5 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 app.use('/',require('./server/routes/router.js'))
 
 app.listen(PORT, () => {
-    console.log((`Server listening to port http://localhost:${PORT}`));
+    console.log((`Server listening to port http://127.0.0.1:${PORT}`));
 })

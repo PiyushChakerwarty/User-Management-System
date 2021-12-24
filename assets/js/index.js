@@ -11,7 +11,7 @@ $("#update_user").submit(function (event) {
     })
     console.log(data);
     var request = {
-        'url': `http://localhost:5001/api/users/${data.id}`,
+        'url': `http://127.0.0.1:5001/api/users/${data.id}`,
         "method": "PUT",
         "data":data
     }
@@ -28,7 +28,7 @@ if (window.location.pathname == "/") {
         var id = $(this).attr("data-id")
         
         var request = {
-            "url": `http://localhost:5001/api/users/${id}`,
+            "url": `http://127.0.0.1:5001/api/users/${id}`,
             "method":"DELETE"
         }
         if (confirm("Do you really want to delete this record?")) {
